@@ -1,0 +1,235 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "taxTotal",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_tokenToTransfer",
+          "type": "address"
+        }
+      ],
+      "name": "taxDivision",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "taxDivision(uint256,address)": "b0995cae"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"taxTotal\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"_tokenToTransfer\",\"type\":\"address\"}],\"name\":\"taxDivision\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/IRouter.sol\":\"IRouter\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":1000},\"remappings\":[\":@openzeppelin/=node_modules/@openzeppelin/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":eth-gas-reporter/=node_modules/eth-gas-reporter/\",\":forge-std/=lib/forge-std/src/\",\":hardhat/=node_modules/hardhat/\"]},\"sources\":{\"contracts/interfaces/IRouter.sol\":{\"keccak256\":\"0x07dbec491a39eddd926f9c869ecea4071e6f4b8b4dcfce5a4abf7ec44463ad8d\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://0075f28a25ecbdcf988ef6351cd0d8844941c1beb902ea7f345bbb77a85233aa\",\"dweb:/ipfs/QmSdj5t9UQKmy7WXb7iie4UFAsqXfUkmnKWRSuJgEkrQ3C\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.13+commit.abaa5c0e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "taxTotal",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "_tokenToTransfer",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "taxDivision"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":eth-gas-reporter/=node_modules/eth-gas-reporter/",
+        ":forge-std/=lib/forge-std/src/",
+        ":hardhat/=node_modules/hardhat/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 1000
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/interfaces/IRouter.sol": "IRouter"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/interfaces/IRouter.sol": {
+        "keccak256": "0x07dbec491a39eddd926f9c869ecea4071e6f4b8b4dcfce5a4abf7ec44463ad8d",
+        "urls": [
+          "bzz-raw://0075f28a25ecbdcf988ef6351cd0d8844941c1beb902ea7f345bbb77a85233aa",
+          "dweb:/ipfs/QmSdj5t9UQKmy7WXb7iie4UFAsqXfUkmnKWRSuJgEkrQ3C"
+        ],
+        "license": "Unlicense"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/interfaces/IRouter.sol",
+    "id": 5295,
+    "exportedSymbols": {
+      "IRouter": [
+        5294
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "38:128:10",
+    "nodes": [
+      {
+        "id": 5286,
+        "nodeType": "PragmaDirective",
+        "src": "38:24:10",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 5294,
+        "nodeType": "ContractDefinition",
+        "src": "66:100:10",
+        "nodes": [
+          {
+            "id": 5293,
+            "nodeType": "FunctionDefinition",
+            "src": "89:74:10",
+            "nodes": [],
+            "functionSelector": "b0995cae",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "taxDivision",
+            "nameLocation": "98:11:10",
+            "parameters": {
+              "id": 5291,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5288,
+                  "mutability": "mutable",
+                  "name": "taxTotal",
+                  "nameLocation": "118:8:10",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5293,
+                  "src": "110:16:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5287,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "110:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5290,
+                  "mutability": "mutable",
+                  "name": "_tokenToTransfer",
+                  "nameLocation": "136:16:10",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5293,
+                  "src": "128:24:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5289,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "128:7:10",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "109:44:10"
+            },
+            "returnParameters": {
+              "id": 5292,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "162:0:10"
+            },
+            "scope": 5294,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IRouter",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          5294
+        ],
+        "name": "IRouter",
+        "nameLocation": "76:7:10",
+        "scope": 5295,
+        "usedErrors": []
+      }
+    ],
+    "license": "Unlicense"
+  },
+  "id": 10
+}

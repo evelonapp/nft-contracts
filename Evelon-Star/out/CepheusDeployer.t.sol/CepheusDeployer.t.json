@@ -1,0 +1,93 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "test/CepheusDeployer.t.sol",
+    "id": 35890,
+    "exportedSymbols": {
+      "DSTest": [
+        7063
+      ],
+      "StdAssertions": [
+        7948
+      ],
+      "StdChains": [
+        8484
+      ],
+      "StdCheats": [
+        10421
+      ],
+      "StdStorage": [
+        11328
+      ],
+      "StdUtils": [
+        13393
+      ],
+      "Test": [
+        13435
+      ],
+      "TestBase": [
+        7120
+      ],
+      "Vm": [
+        14592
+      ],
+      "console": [
+        22656
+      ],
+      "console2": [
+        30752
+      ],
+      "stdError": [
+        10487
+      ],
+      "stdJson": [
+        11154
+      ],
+      "stdMath": [
+        11296
+      ],
+      "stdStorage": [
+        12762
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:54:62",
+    "nodes": [
+      {
+        "id": 35888,
+        "nodeType": "PragmaDirective",
+        "src": "32:24:62",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 35889,
+        "nodeType": "ImportDirective",
+        "src": "57:28:62",
+        "nodes": [],
+        "absolutePath": "lib/forge-std/src/Test.sol",
+        "file": "forge-std/Test.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 35890,
+        "sourceUnit": 13436,
+        "symbolAliases": [],
+        "unitAlias": ""
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 62
+}

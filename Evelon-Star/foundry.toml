@@ -1,0 +1,26 @@
+# The Default Profile
+[profile.default]
+# Sets the concrete solc version to use
+# This overrides the `auto_detect_solc` value
+auto_detect_solc = true
+# Increase optimizer_runs
+optimizer = true
+optimizer_runs = 1_000
+# Fuzz more than the default 256
+fuzz_runs = 1_000
+# Configure remappings
+solc-version = "0.8.13"
+
+
+
+remappings = [
+    "@openzeppelin/=node_modules/@openzeppelin/",
+    "ds-test/=lib/forge-std/lib/ds-test/src/",
+    "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+    "forge-std/=lib/forge-std/src/",
+    "hardhat/=node_modules/hardhat/",
+]
+
+# Extreme Fuzzing CI Profile :P
+[profile.ci]
+fuzz_runs = 100_000
