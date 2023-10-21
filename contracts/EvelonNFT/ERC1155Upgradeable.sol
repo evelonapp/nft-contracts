@@ -40,7 +40,7 @@ abstract contract ERC1155Upgradeable is
         mapping(address account => mapping(address operator => bool)) _operatorApprovals;
         // Used as the URI for all token types by relying on ID substitution, e.g. https://token-cdn-domain/{id}.json
         string _uri;
-        string _prefix;
+        string _suffix;
     }
 
     // keccak256(abi.encode(uint256(keccak256("openzeppelin.storage.ERC1155")) - 1)) & ~bytes32(uint256(0xff))
@@ -67,16 +67,16 @@ abstract contract ERC1155Upgradeable is
      */
     function __ERC1155_init(
         string memory uri_,
-        string memory prefix_
+        string memory suffix_
     ) internal onlyInitializing {
-        __ERC1155_init_unchained(uri_, prefix_);
+        __ERC1155_init_unchained(uri_, suffix_);
     }
 
     function __ERC1155_init_unchained(
         string memory uri_,
-        string memory prefix_
+        string memory suffix_
     ) internal onlyInitializing {
-        _setURI(uri_, prefix_);
+        _setURI(uri_, suffix_);
     }
 
     /**
@@ -124,7 +124,7 @@ abstract contract ERC1155Upgradeable is
                     id.toString(),
                     block.chainid.toString(),
                     address(this).toHexString(),
-                    $._prefix
+                    $._suffix
                 )
             );
     }
@@ -406,11 +406,11 @@ abstract contract ERC1155Upgradeable is
      */
     function _setURI(
         string memory newuri,
-        string memory newPrefix
+        string memory newSuffix
     ) internal virtual {
         ERC1155Storage storage $ = _getERC1155Storage();
         $._uri = newuri;
-        $._prefix = newPrefix;
+        $._suffix = newSuffix;
     }
 
     /**
