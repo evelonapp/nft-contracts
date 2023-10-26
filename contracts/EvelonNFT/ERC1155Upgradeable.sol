@@ -3,6 +3,7 @@
 
 pragma solidity ^0.8.20;
 
+import {NFTData} from "./utils/nftStruct.sol";
 import {IERC1155} from "@openzeppelin/contracts/token/ERC1155/IERC1155.sol";
 import {IERC1155Receiver} from "@openzeppelin/contracts/token/ERC1155/IERC1155Receiver.sol";
 import {IERC1155MetadataURI} from "@openzeppelin/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol";
@@ -41,16 +42,12 @@ abstract contract ERC1155Upgradeable is
         // Used as the URI for all token types by relying on ID substitution, e.g. https://token-cdn-domain/{id}.json
         string _uri;
         string _suffix;
+        uint256 _nextTokenId;
     }
 
     // keccak256(abi.encode(uint256(keccak256("openzeppelin.storage.ERC1155")) - 1)) & ~bytes32(uint256(0xff))
     bytes32 private constant ERC1155StorageLocation =
         0x88be536d5240c274a3b1d3a1be54482fd9caa294f08c62a7cde569f49a3c4500;
-
-    struct NFTData {
-        uint256 id;
-        string idURI;
-    }
 
     function _getERC1155Storage()
         private
@@ -424,12 +421,9 @@ abstract contract ERC1155Upgradeable is
      * - If `to` refers to a smart contract, it must implement {IERC1155Receiver-onERC1155Received} and return the
      * acceptance magic value.
      */
-    function _mint(
-        address to,
-        uint256 id,
-        uint256 value,
-        bytes memory data
-    ) internal {
+    function _mint(address to, uint256 value, bytes memory data) internal {
+        ERC1155Storage storage $ = _getERC1155Storage();
+        uint256 id = $._nextTokenId++;
         if (to == address(0)) {
             revert ERC1155InvalidReceiver(address(0));
         }
@@ -454,10 +448,14 @@ abstract contract ERC1155Upgradeable is
      */
     function _mintBatch(
         address to,
-        uint256[] memory ids,
         uint256[] memory values,
         bytes memory data
     ) internal {
+        ERC1155Storage storage $ = _getERC1155Storage();
+        uint256[] memory ids = new uint256[](values.length);
+        for (uint256 i; i < values.length; i++) {
+            ids[i] = $._nextTokenId++;
+        }
         if (to == address(0)) {
             revert ERC1155InvalidReceiver(address(0));
         }

@@ -45,7 +45,9 @@ describe("Lock", function () {
 
   describe("Deployment", async function () {
     it("Evelon contract should show the uri to nft", async function () {
+      console.log("Deploying");
       const { evelon, factory, owner } = await deployEvelon();
+
       console.log("Trigger");
       await evelon.setURI("abhi", "prefix");
       await factory.mint(owner.address, 1, 1);

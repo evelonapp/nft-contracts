@@ -1,19 +1,18 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-// import {IERC1155} from "@openzeppelin/contracts/token/ERC1155/IERC1155.sol";
+import {NFTData} from "./EvelonNFT/utils/nftStruct.sol";
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 
 interface IERC1155 {
-    function mint(
-        address account,
-        uint256 id,
-        uint256 amount,
-        bytes memory data
-    ) external;
+    function mint(address account, uint256 amount, bytes memory data) external;
+
+    function getAllTokens(
+        address creator
+    ) external view returns (NFTData[] memory);
 }
 
 contract EvelonFactory is
@@ -28,6 +27,17 @@ contract EvelonFactory is
     address public collectionWallet;
     uint256 public price;
     uint256 public buybackPercent;
+
+    struct UserData {
+        address[] contractAddresses;
+        mapping(address => string) contractName;
+    }
+
+    mapping(address => UserData) userData;
+
+    struct NFTDatas {
+        NFTData[] allNFTDatas;
+    }
 
     /// @custom:oz-upgrades-unsafe-allow constructor
     constructor() {
@@ -62,11 +72,31 @@ contract EvelonFactory is
         address newImplementation
     ) internal override onlyRole(UPGRADER_ROLE) {}
 
-    function mint(address account, uint256 id, uint256 amount) public {
+    function getAllTokens(
+        address creator
+    ) external view returns (NFTDatas[] memory) {
+        NFTDatas[] memory nftDatas = new NFTDatas[](
+            1 + userData[creator].contractAddresses.length
+        );
+        nftDatas[0] = NFTDatas(evelonNFT.getAllTokens(creator));
+        for (uint i = 1; i < userData[creator].contractAddresses.length; i++) {
+            nftDatas[i] = NFTDatas(
+                IERC1155(userData[creator].contractAddresses[i - 1])
+                    .getAllTokens(creator)
+            );
+        }
+        return nftDatas;
+    }
+
+    function mint(
+        address account,
+        address contractAddtess,
+        uint256 amount
+    ) public {
         uint256 buyback = (price * buybackPercent) / 10000;
         usdt.transferFrom(msg.sender, collectionWallet, price - buyback);
         usdt.transferFrom(msg.sender, buybackWallet, buyback);
-        evelonNFT.mint(account, id, amount, "0x");
+        IERC1155(contractAddtess).mint(account, amount, "0x");
     }
 
     function updateAddresses(

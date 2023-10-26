@@ -51,20 +51,18 @@ contract EvelonNFTs is
 
     function mint(
         address account,
-        uint256 id,
         uint256 amount,
         bytes memory data
     ) public onlyRole(MINTER_ROLE) {
-        _mint(account, id, amount, data);
+        _mint(account, amount, data);
     }
 
     function mintBatch(
         address to,
-        uint256[] memory ids,
         uint256[] memory amounts,
         bytes memory data
     ) public onlyRole(MINTER_ROLE) {
-        _mintBatch(to, ids, amounts, data);
+        _mintBatch(to, amounts, data);
     }
 
     function _authorizeUpgrade(
