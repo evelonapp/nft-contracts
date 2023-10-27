@@ -2,7 +2,6 @@
 pragma solidity ^0.8.20;
 
 import {NFTData} from "./EvelonNFT/utils/nftStruct.sol";
-import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
@@ -13,6 +12,10 @@ interface IERC1155 {
     function getAllTokens(
         address creator
     ) external view returns (NFTData[] memory);
+}
+
+interface IERC20 {
+    function transferFrom(address from, address to, uint256 value) external;
 }
 
 contract EvelonFactory is
@@ -27,13 +30,6 @@ contract EvelonFactory is
     address public collectionWallet;
     uint256 public price;
     uint256 public buybackPercent;
-
-    struct UserData {
-        address[] contractAddresses;
-        mapping(address => string) contractName;
-    }
-
-    mapping(address => UserData) userData;
 
     struct NFTDatas {
         NFTData[] allNFTDatas;
@@ -75,16 +71,9 @@ contract EvelonFactory is
     function getAllTokens(
         address creator
     ) external view returns (NFTDatas[] memory) {
-        NFTDatas[] memory nftDatas = new NFTDatas[](
-            1 + userData[creator].contractAddresses.length
-        );
+        NFTDatas[] memory nftDatas = new NFTDatas[](1);
         nftDatas[0] = NFTDatas(evelonNFT.getAllTokens(creator));
-        for (uint i = 1; i < userData[creator].contractAddresses.length; i++) {
-            nftDatas[i] = NFTDatas(
-                IERC1155(userData[creator].contractAddresses[i - 1])
-                    .getAllTokens(creator)
-            );
-        }
+
         return nftDatas;
     }
 
