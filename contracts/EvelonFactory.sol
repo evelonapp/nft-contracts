@@ -44,11 +44,7 @@ contract EvelonFactory is
         address defaultAdmin,
         address upgrader,
         address evelonNFT_,
-        address usdt_,
-        address collectionWallet_,
-        address buybackWallet_,
-        uint256 buybackPercent_,
-        uint256 price_
+        address usdt_
     ) public initializer {
         __AccessControl_init();
         __UUPSUpgradeable_init();
@@ -58,10 +54,6 @@ contract EvelonFactory is
 
         evelonNFT = IERC1155(evelonNFT_);
         usdt = IERC20(usdt_);
-        buybackWallet = buybackWallet_;
-        collectionWallet = collectionWallet_;
-        buybackPercent = buybackPercent_;
-        price = price_;
     }
 
     function _authorizeUpgrade(

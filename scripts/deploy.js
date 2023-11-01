@@ -10,17 +10,19 @@ async function main() {
   const [owner, otherAccount] = await ethers.getSigners();
 
   const Evelon = await ethers.getContractFactory("EvelonNFTs");
-  // const evelon = await upgrades.deployProxy(
-  //   Evelon,
-  //   [owner.address, owner.address, owner.address],
-  //   {
-  //     initializer: "initialize",
-  //   },
-  //   { kind: "uups" }
-  // );
-  const evelon = await Evelon.attach(
-    "0x52C28a6138bA4AFA744d301f4d7a15F1284c9468"
+  const evelon = await upgrades.deployProxy(
+    Evelon,
+    [owner.address, owner.address, owner.address],
+    {
+      initializer: "initialize",
+    },
+    { kind: "uups" }
   );
+
+  // const evelon = await Evelon.attach(
+  //   "0x53572631EA49CBE79B915d788Df0aC688104EeE3"
+  // );
+
   console.log("Evelon address", evelon.target);
 
   const Factory = await ethers.getContractFactory("EvelonFactory");
@@ -29,12 +31,8 @@ async function main() {
     [
       owner.address,
       owner.address,
-      "0x52C28a6138bA4AFA744d301f4d7a15F1284c9468", //evelon.target,
-      "0x69f5b5974536631582d12ed5bc270a6c20448bd9",
-      owner.address,
-      otherAccount.address,
-      1000,
-      10000000,
+      evelon.target,
+      "0xdAC17F958D2ee523a2206206994597C13D831ec7", // USDT
     ],
     {
       initializer: "initialize",
