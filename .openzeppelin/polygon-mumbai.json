@@ -45,6 +45,11 @@
       "address": "0xC61b34B373aAbe07D1AaFC1cb6463974E1bFCdf6",
       "txHash": "0xe0d8e878608f0967690929fb3a395779be8d69cba97aeb0e6f7c98030666e7a0",
       "kind": "uups"
+    },
+    {
+      "address": "0xb8A9952D7BD37b96fb3890A6b83a3Febbf17F800",
+      "txHash": "0x6fd8ed315a16cac3c170e9c3bf7f452b9e07e554d9c2f509cfc8f8590fdd3d38",
+      "kind": "uups"
     }
   ],
   "impls": {
@@ -1385,7 +1390,7 @@
             "slot": "0",
             "type": "t_contract(IERC1155)1683",
             "contract": "EvelonFactory",
-            "src": "contracts/EvelonFactory.sol:28"
+            "src": "contracts/EvelonFactory.sol:27"
           },
           {
             "label": "usdt",
@@ -1393,7 +1398,7 @@
             "slot": "1",
             "type": "t_contract(IERC20)1693",
             "contract": "EvelonFactory",
-            "src": "contracts/EvelonFactory.sol:29"
+            "src": "contracts/EvelonFactory.sol:28"
           },
           {
             "label": "buybackWallet",
@@ -1401,7 +1406,7 @@
             "slot": "2",
             "type": "t_address",
             "contract": "EvelonFactory",
-            "src": "contracts/EvelonFactory.sol:30"
+            "src": "contracts/EvelonFactory.sol:29"
           },
           {
             "label": "collectionWallet",
@@ -1409,7 +1414,7 @@
             "slot": "3",
             "type": "t_address",
             "contract": "EvelonFactory",
-            "src": "contracts/EvelonFactory.sol:31"
+            "src": "contracts/EvelonFactory.sol:30"
           },
           {
             "label": "price",
@@ -1417,7 +1422,7 @@
             "slot": "4",
             "type": "t_uint256",
             "contract": "EvelonFactory",
-            "src": "contracts/EvelonFactory.sol:32"
+            "src": "contracts/EvelonFactory.sol:31"
           },
           {
             "label": "buybackPercent",
@@ -1425,7 +1430,7 @@
             "slot": "5",
             "type": "t_uint256",
             "contract": "EvelonFactory",
-            "src": "contracts/EvelonFactory.sol:33"
+            "src": "contracts/EvelonFactory.sol:32"
           }
         ],
         "types": {
@@ -1508,6 +1513,2825 @@
           "t_contract(IERC20)1693": {
             "label": "contract IERC20",
             "numberOfBytes": "20"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.AccessControl": [
+            {
+              "contract": "AccessControlUpgradeable",
+              "label": "_roles",
+              "type": "t_mapping(t_bytes32,t_struct(RoleData)25_storage)",
+              "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:61",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "0a63b6e381a79951467de8ca82b3c8f7a476b8e812930d0abe77a0dc64b541ec": {
+      "address": "0xF6Cd992348bDA4A7429682A0357cd2Ce7a96d901",
+      "txHash": "0x3d0b1938829315402534609785a79c0246721ee21385a73ce67eaaae6c9a851c",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "evelonNFT",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_contract(IERC1155)1783",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:42"
+          },
+          {
+            "label": "usdt",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_contract(IERC20)1793",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:43"
+          },
+          {
+            "label": "buybackWallet",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:44"
+          },
+          {
+            "label": "collectionWallet",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:45"
+          },
+          {
+            "label": "price",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_uint256",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:46"
+          },
+          {
+            "label": "buybackPercent",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_uint256",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:47"
+          },
+          {
+            "label": "implementation",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:48"
+          },
+          {
+            "label": "userData",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_address,t_struct(UserData)1831_storage)",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:64"
+          },
+          {
+            "label": "contractData",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_mapping(t_address,t_struct(ContractData)1838_storage)",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:65"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)25_storage)": {
+            "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(AccessControlStorage)32_storage": {
+            "label": "struct AccessControlUpgradeable.AccessControlStorage",
+            "members": [
+              {
+                "label": "_roles",
+                "type": "t_mapping(t_bytes32,t_struct(RoleData)25_storage)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(InitializableStorage)47_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(RoleData)25_storage": {
+            "label": "struct AccessControlUpgradeable.RoleData",
+            "members": [
+              {
+                "label": "hasRole",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IERC1155)1783": {
+            "label": "contract IERC1155",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)1793": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_struct(ContractData)1838_storage)": {
+            "label": "mapping(address => struct EvelonFactory.ContractData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(UserData)1831_storage)": {
+            "label": "mapping(address => struct EvelonFactory.UserData)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(ContractData)1838_storage": {
+            "label": "struct EvelonFactory.ContractData",
+            "members": [
+              {
+                "label": "name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "uri",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "creator",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(UserData)1831_storage": {
+            "label": "struct EvelonFactory.UserData",
+            "members": [
+              {
+                "label": "contractAddresses",
+                "type": "t_array(t_address)dyn_storage",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.AccessControl": [
+            {
+              "contract": "AccessControlUpgradeable",
+              "label": "_roles",
+              "type": "t_mapping(t_bytes32,t_struct(RoleData)25_storage)",
+              "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:61",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "1c953bf55b7896011af2c3651770d1b6977ded42d5c574801ce31904f09553c0": {
+      "address": "0x197E525f904415452839dE3c7da8a6AA8d1D49E0",
+      "txHash": "0x2c3083915c581baf9a0fe3f1c2532e02bd31af531ed882f051d83b58c5974eba",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "evelonNFT",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_contract(IERC1155)1783",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:42"
+          },
+          {
+            "label": "usdt",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_contract(IERC20)1793",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:43"
+          },
+          {
+            "label": "buybackWallet",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:44"
+          },
+          {
+            "label": "collectionWallet",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:45"
+          },
+          {
+            "label": "price",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_uint256",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:46"
+          },
+          {
+            "label": "buybackPercent",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_uint256",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:47"
+          },
+          {
+            "label": "implementation",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:48"
+          },
+          {
+            "label": "userData",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_address,t_struct(UserData)1831_storage)",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:64"
+          },
+          {
+            "label": "contractData",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_mapping(t_address,t_struct(ContractData)1838_storage)",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:65"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)25_storage)": {
+            "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(AccessControlStorage)32_storage": {
+            "label": "struct AccessControlUpgradeable.AccessControlStorage",
+            "members": [
+              {
+                "label": "_roles",
+                "type": "t_mapping(t_bytes32,t_struct(RoleData)25_storage)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(InitializableStorage)47_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(RoleData)25_storage": {
+            "label": "struct AccessControlUpgradeable.RoleData",
+            "members": [
+              {
+                "label": "hasRole",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IERC1155)1783": {
+            "label": "contract IERC1155",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)1793": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_struct(ContractData)1838_storage)": {
+            "label": "mapping(address => struct EvelonFactory.ContractData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(UserData)1831_storage)": {
+            "label": "mapping(address => struct EvelonFactory.UserData)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(ContractData)1838_storage": {
+            "label": "struct EvelonFactory.ContractData",
+            "members": [
+              {
+                "label": "name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "uri",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "creator",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(UserData)1831_storage": {
+            "label": "struct EvelonFactory.UserData",
+            "members": [
+              {
+                "label": "contractAddresses",
+                "type": "t_array(t_address)dyn_storage",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.AccessControl": [
+            {
+              "contract": "AccessControlUpgradeable",
+              "label": "_roles",
+              "type": "t_mapping(t_bytes32,t_struct(RoleData)25_storage)",
+              "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:61",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "9fe4614d4252a04d6e83681c070a8dda40d680cb547e2dc195332d48d507b28b": {
+      "address": "0x18717893eb832f05c5fE687DDE32c91e5Ce1dA7D",
+      "txHash": "0x38005967364f1dc8af6303d2b77a5b04f76b659142f2c651b8a1010d9f7d359b",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "evelonNFT",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_contract(IERC1155)1790",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:44"
+          },
+          {
+            "label": "usdt",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_contract(IERC20)1800",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:45"
+          },
+          {
+            "label": "buybackWallet",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:46"
+          },
+          {
+            "label": "collectionWallet",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:47"
+          },
+          {
+            "label": "price",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_uint256",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:48"
+          },
+          {
+            "label": "buybackPercent",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_uint256",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:49"
+          },
+          {
+            "label": "implementation",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:50"
+          },
+          {
+            "label": "userData",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_address,t_struct(UserData)1838_storage)",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:66"
+          },
+          {
+            "label": "contractData",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_mapping(t_address,t_struct(ContractData)1845_storage)",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:67"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)25_storage)": {
+            "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(AccessControlStorage)32_storage": {
+            "label": "struct AccessControlUpgradeable.AccessControlStorage",
+            "members": [
+              {
+                "label": "_roles",
+                "type": "t_mapping(t_bytes32,t_struct(RoleData)25_storage)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(InitializableStorage)47_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(RoleData)25_storage": {
+            "label": "struct AccessControlUpgradeable.RoleData",
+            "members": [
+              {
+                "label": "hasRole",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IERC1155)1790": {
+            "label": "contract IERC1155",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)1800": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_struct(ContractData)1845_storage)": {
+            "label": "mapping(address => struct EvelonFactory.ContractData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(UserData)1838_storage)": {
+            "label": "mapping(address => struct EvelonFactory.UserData)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(ContractData)1845_storage": {
+            "label": "struct EvelonFactory.ContractData",
+            "members": [
+              {
+                "label": "name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "uri",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "creator",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(UserData)1838_storage": {
+            "label": "struct EvelonFactory.UserData",
+            "members": [
+              {
+                "label": "contractAddresses",
+                "type": "t_array(t_address)dyn_storage",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.AccessControl": [
+            {
+              "contract": "AccessControlUpgradeable",
+              "label": "_roles",
+              "type": "t_mapping(t_bytes32,t_struct(RoleData)25_storage)",
+              "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:61",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "ed4bef9e47b5a7a1bb235d5450819e089d68f2f70caa700d35f072614963c318": {
+      "address": "0x0eD06392F5F12C502e862D5Ff40eeb8e4a529fef",
+      "txHash": "0xfd31fea568394c17920e2bcd469fa7e9d797ede0f0dd044a671cf95cd8d07674",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "evelonNFT",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_contract(IERC1155)1795",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:46"
+          },
+          {
+            "label": "usdt",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_contract(IERC20)1805",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:47"
+          },
+          {
+            "label": "buybackWallet",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:48"
+          },
+          {
+            "label": "collectionWallet",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:49"
+          },
+          {
+            "label": "price",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_uint256",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:50"
+          },
+          {
+            "label": "buybackPercent",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_uint256",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:51"
+          },
+          {
+            "label": "implementation",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:52"
+          },
+          {
+            "label": "userData",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_address,t_struct(UserData)1843_storage)",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:69"
+          },
+          {
+            "label": "contractData",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_mapping(t_address,t_struct(ContractData)1852_storage)",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:70"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)25_storage)": {
+            "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(AccessControlStorage)32_storage": {
+            "label": "struct AccessControlUpgradeable.AccessControlStorage",
+            "members": [
+              {
+                "label": "_roles",
+                "type": "t_mapping(t_bytes32,t_struct(RoleData)25_storage)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(InitializableStorage)47_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(RoleData)25_storage": {
+            "label": "struct AccessControlUpgradeable.RoleData",
+            "members": [
+              {
+                "label": "hasRole",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IERC1155)1795": {
+            "label": "contract IERC1155",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)1805": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_struct(ContractData)1852_storage)": {
+            "label": "mapping(address => struct EvelonFactory.ContractData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(UserData)1843_storage)": {
+            "label": "mapping(address => struct EvelonFactory.UserData)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(ContractData)1852_storage": {
+            "label": "struct EvelonFactory.ContractData",
+            "members": [
+              {
+                "label": "name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "uri",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "creator",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "tokenId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(UserData)1843_storage": {
+            "label": "struct EvelonFactory.UserData",
+            "members": [
+              {
+                "label": "contractAddresses",
+                "type": "t_array(t_address)dyn_storage",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.AccessControl": [
+            {
+              "contract": "AccessControlUpgradeable",
+              "label": "_roles",
+              "type": "t_mapping(t_bytes32,t_struct(RoleData)25_storage)",
+              "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:61",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "85518683c75655013881af6a1fc35725f05c4ae767c8ea67913fa5be28e5b9a6": {
+      "address": "0x943A176f95699A95DbE942383696Ae3BF585e364",
+      "txHash": "0x121a83f3ec6e7ff725b0a29b7ea6868da15185d027279da7fc6be2ffd0f63734",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "evelonNFT",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_contract(IERC1155)1795",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:46"
+          },
+          {
+            "label": "usdt",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_contract(IERC20)1805",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:47"
+          },
+          {
+            "label": "buybackWallet",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:48"
+          },
+          {
+            "label": "collectionWallet",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:49"
+          },
+          {
+            "label": "price",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_uint256",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:50"
+          },
+          {
+            "label": "buybackPercent",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_uint256",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:51"
+          },
+          {
+            "label": "implementation",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:52"
+          },
+          {
+            "label": "userData",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_address,t_struct(UserData)1845_storage)",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:70"
+          },
+          {
+            "label": "contractData",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_mapping(t_address,t_struct(ContractData)1854_storage)",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:71"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)25_storage)": {
+            "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(AccessControlStorage)32_storage": {
+            "label": "struct AccessControlUpgradeable.AccessControlStorage",
+            "members": [
+              {
+                "label": "_roles",
+                "type": "t_mapping(t_bytes32,t_struct(RoleData)25_storage)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(InitializableStorage)47_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(RoleData)25_storage": {
+            "label": "struct AccessControlUpgradeable.RoleData",
+            "members": [
+              {
+                "label": "hasRole",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IERC1155)1795": {
+            "label": "contract IERC1155",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)1805": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_struct(ContractData)1854_storage)": {
+            "label": "mapping(address => struct EvelonFactory.ContractData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(UserData)1845_storage)": {
+            "label": "mapping(address => struct EvelonFactory.UserData)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(ContractData)1854_storage": {
+            "label": "struct EvelonFactory.ContractData",
+            "members": [
+              {
+                "label": "name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "uri",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "creator",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "tokenId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(UserData)1845_storage": {
+            "label": "struct EvelonFactory.UserData",
+            "members": [
+              {
+                "label": "contractAddresses",
+                "type": "t_array(t_address)dyn_storage",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.AccessControl": [
+            {
+              "contract": "AccessControlUpgradeable",
+              "label": "_roles",
+              "type": "t_mapping(t_bytes32,t_struct(RoleData)25_storage)",
+              "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:61",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "4ea19e2fa58b2d6cd50aae68b0e72397be42462f0ed8bed9ada5b1a3377799dc": {
+      "address": "0xBF92E41C91F03b4f5C06d74A4CD05369aD2A7054",
+      "txHash": "0xc67f9f0a7b0da6c03ed632fa6c7c10b398bdbaa315ab3e181137d8a9bbb6722c",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "evelonNFT",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_contract(IERC1155)3710",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:46"
+          },
+          {
+            "label": "usdt",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_contract(IERC20)3720",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:47"
+          },
+          {
+            "label": "buybackWallet",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:48"
+          },
+          {
+            "label": "collectionWallet",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:49"
+          },
+          {
+            "label": "price",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_uint256",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:50"
+          },
+          {
+            "label": "buybackPercent",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_uint256",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:51"
+          },
+          {
+            "label": "implementation",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:52"
+          },
+          {
+            "label": "userData",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_address,t_struct(UserData)3760_storage)",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:70"
+          },
+          {
+            "label": "contractData",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_mapping(t_address,t_struct(ContractData)3769_storage)",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:71"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)25_storage)": {
+            "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(AccessControlStorage)32_storage": {
+            "label": "struct AccessControlUpgradeable.AccessControlStorage",
+            "members": [
+              {
+                "label": "_roles",
+                "type": "t_mapping(t_bytes32,t_struct(RoleData)25_storage)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(InitializableStorage)47_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(RoleData)25_storage": {
+            "label": "struct AccessControlUpgradeable.RoleData",
+            "members": [
+              {
+                "label": "hasRole",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IERC1155)3710": {
+            "label": "contract IERC1155",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)3720": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_struct(ContractData)3769_storage)": {
+            "label": "mapping(address => struct EvelonFactory.ContractData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(UserData)3760_storage)": {
+            "label": "mapping(address => struct EvelonFactory.UserData)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(ContractData)3769_storage": {
+            "label": "struct EvelonFactory.ContractData",
+            "members": [
+              {
+                "label": "name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "uri",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "creator",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "tokenId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(UserData)3760_storage": {
+            "label": "struct EvelonFactory.UserData",
+            "members": [
+              {
+                "label": "contractAddresses",
+                "type": "t_array(t_address)dyn_storage",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.AccessControl": [
+            {
+              "contract": "AccessControlUpgradeable",
+              "label": "_roles",
+              "type": "t_mapping(t_bytes32,t_struct(RoleData)25_storage)",
+              "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:61",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "eada781a841d2e5631ce2431a25c68b05b239df8b61cada5e13cb67ebc739d99": {
+      "address": "0x0765F48Ad6b13B0eEe1406f3E38F0dfFdA10b030",
+      "txHash": "0xb853f68524f9498ad3406b92f50948b280f82d1b095b3715a27c57d2386c283c",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "evelonNFT",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_contract(IERC1155)1795",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:46"
+          },
+          {
+            "label": "usdt",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_contract(IERC20)1805",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:47"
+          },
+          {
+            "label": "buybackWallet",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:48"
+          },
+          {
+            "label": "collectionWallet",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:49"
+          },
+          {
+            "label": "price",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_uint256",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:50"
+          },
+          {
+            "label": "buybackPercent",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_uint256",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:51"
+          },
+          {
+            "label": "implementation",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:52"
+          },
+          {
+            "label": "userData",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_address,t_struct(UserData)1845_storage)",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:70"
+          },
+          {
+            "label": "contractData",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_mapping(t_address,t_struct(ContractData)1854_storage)",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:71"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)25_storage)": {
+            "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(AccessControlStorage)32_storage": {
+            "label": "struct AccessControlUpgradeable.AccessControlStorage",
+            "members": [
+              {
+                "label": "_roles",
+                "type": "t_mapping(t_bytes32,t_struct(RoleData)25_storage)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(InitializableStorage)47_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(RoleData)25_storage": {
+            "label": "struct AccessControlUpgradeable.RoleData",
+            "members": [
+              {
+                "label": "hasRole",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IERC1155)1795": {
+            "label": "contract IERC1155",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)1805": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_struct(ContractData)1854_storage)": {
+            "label": "mapping(address => struct EvelonFactory.ContractData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(UserData)1845_storage)": {
+            "label": "mapping(address => struct EvelonFactory.UserData)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(ContractData)1854_storage": {
+            "label": "struct EvelonFactory.ContractData",
+            "members": [
+              {
+                "label": "name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "uri",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "creator",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "tokenId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(UserData)1845_storage": {
+            "label": "struct EvelonFactory.UserData",
+            "members": [
+              {
+                "label": "contractAddresses",
+                "type": "t_array(t_address)dyn_storage",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.AccessControl": [
+            {
+              "contract": "AccessControlUpgradeable",
+              "label": "_roles",
+              "type": "t_mapping(t_bytes32,t_struct(RoleData)25_storage)",
+              "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:61",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "c9b9e0b5cfb5246d83513ea8f7939de8dfc50f6b4e45b21c0230324614b44e62": {
+      "address": "0x4b1EC77c355D55ace9AeD75Dfe0bC4c0CF87fdd6",
+      "txHash": "0x3557cf6aca0bb71b8525befec8abe974e679dd9fd074cd3cb345ad5b79e7c8e9",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "evelonNFT",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_contract(IERC1155)1805",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:52"
+          },
+          {
+            "label": "usdt",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_contract(IERC20)1815",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:53"
+          },
+          {
+            "label": "buybackWallet",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:54"
+          },
+          {
+            "label": "collectionWallet",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:55"
+          },
+          {
+            "label": "price",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_uint256",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:56"
+          },
+          {
+            "label": "buybackPercent",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_uint256",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:57"
+          },
+          {
+            "label": "implementation",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:58"
+          },
+          {
+            "label": "userData",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_address,t_struct(UserData)1855_storage)",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:76"
+          },
+          {
+            "label": "contractData",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_mapping(t_address,t_struct(ContractData)1864_storage)",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:77"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)25_storage)": {
+            "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(AccessControlStorage)32_storage": {
+            "label": "struct AccessControlUpgradeable.AccessControlStorage",
+            "members": [
+              {
+                "label": "_roles",
+                "type": "t_mapping(t_bytes32,t_struct(RoleData)25_storage)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(InitializableStorage)47_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(RoleData)25_storage": {
+            "label": "struct AccessControlUpgradeable.RoleData",
+            "members": [
+              {
+                "label": "hasRole",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IERC1155)1805": {
+            "label": "contract IERC1155",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)1815": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_struct(ContractData)1864_storage)": {
+            "label": "mapping(address => struct EvelonFactory.ContractData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(UserData)1855_storage)": {
+            "label": "mapping(address => struct EvelonFactory.UserData)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(ContractData)1864_storage": {
+            "label": "struct EvelonFactory.ContractData",
+            "members": [
+              {
+                "label": "name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "uri",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "creator",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "tokenId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(UserData)1855_storage": {
+            "label": "struct EvelonFactory.UserData",
+            "members": [
+              {
+                "label": "contractAddresses",
+                "type": "t_array(t_address)dyn_storage",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.AccessControl": [
+            {
+              "contract": "AccessControlUpgradeable",
+              "label": "_roles",
+              "type": "t_mapping(t_bytes32,t_struct(RoleData)25_storage)",
+              "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:61",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "0f75ea5cfc5550358ba7e0e8a258226cdce0e45302351a701a7e3ee89f40dc8e": {
+      "address": "0xA0ff9fb29907346C1C402C130bBb7A73D0a2E974",
+      "txHash": "0x8f1097bbac2e455a6ee36d915744d2bf6587207f9b2da75d221b128da4329da3",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "evelonNFT",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_contract(IERC1155)3720",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:52"
+          },
+          {
+            "label": "usdt",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_contract(IERC20)3730",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:53"
+          },
+          {
+            "label": "buybackWallet",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:54"
+          },
+          {
+            "label": "collectionWallet",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:55"
+          },
+          {
+            "label": "price",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_uint256",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:56"
+          },
+          {
+            "label": "buybackPercent",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_uint256",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:57"
+          },
+          {
+            "label": "implementation",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:58"
+          },
+          {
+            "label": "userData",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_address,t_struct(UserData)3770_storage)",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:76"
+          },
+          {
+            "label": "contractData",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_mapping(t_address,t_struct(ContractData)3779_storage)",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:77"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)25_storage)": {
+            "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(AccessControlStorage)32_storage": {
+            "label": "struct AccessControlUpgradeable.AccessControlStorage",
+            "members": [
+              {
+                "label": "_roles",
+                "type": "t_mapping(t_bytes32,t_struct(RoleData)25_storage)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(InitializableStorage)47_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(RoleData)25_storage": {
+            "label": "struct AccessControlUpgradeable.RoleData",
+            "members": [
+              {
+                "label": "hasRole",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IERC1155)3720": {
+            "label": "contract IERC1155",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)3730": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_struct(ContractData)3779_storage)": {
+            "label": "mapping(address => struct EvelonFactory.ContractData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(UserData)3770_storage)": {
+            "label": "mapping(address => struct EvelonFactory.UserData)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(ContractData)3779_storage": {
+            "label": "struct EvelonFactory.ContractData",
+            "members": [
+              {
+                "label": "name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "uri",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "creator",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "tokenId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(UserData)3770_storage": {
+            "label": "struct EvelonFactory.UserData",
+            "members": [
+              {
+                "label": "contractAddresses",
+                "type": "t_array(t_address)dyn_storage",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.AccessControl": [
+            {
+              "contract": "AccessControlUpgradeable",
+              "label": "_roles",
+              "type": "t_mapping(t_bytes32,t_struct(RoleData)25_storage)",
+              "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:61",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "46fb4410beefbd34c0fc1dbc25d979c831f310db5a0764f58ddf9efa8583c618": {
+      "address": "0xE304c959f46Cc2AE4EEA1D5CD42c7DB4C2384084",
+      "txHash": "0x2bb10cfee9cc1cae584c7ce42249a197a9b8626b01ffb2135fdfd4a869f027a9",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "evelonNFT",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_contract(IERC1155)1812",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:59"
+          },
+          {
+            "label": "usdt",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_contract(IERC20)1822",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:60"
+          },
+          {
+            "label": "buybackWallet",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:61"
+          },
+          {
+            "label": "collectionWallet",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:62"
+          },
+          {
+            "label": "price",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_uint256",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:63"
+          },
+          {
+            "label": "buybackPercent",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_uint256",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:64"
+          },
+          {
+            "label": "implementation",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:65"
+          },
+          {
+            "label": "userData",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_address,t_struct(UserData)1868_storage)",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:83"
+          },
+          {
+            "label": "contractData",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_mapping(t_address,t_struct(ContractData)1877_storage)",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:84"
+          },
+          {
+            "label": "isUserRegistered",
+            "offset": 0,
+            "slot": "9",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:85"
+          },
+          {
+            "label": "userAddresses",
+            "offset": 0,
+            "slot": "10",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:86"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)25_storage)": {
+            "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(AccessControlStorage)32_storage": {
+            "label": "struct AccessControlUpgradeable.AccessControlStorage",
+            "members": [
+              {
+                "label": "_roles",
+                "type": "t_mapping(t_bytes32,t_struct(RoleData)25_storage)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(InitializableStorage)47_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(RoleData)25_storage": {
+            "label": "struct AccessControlUpgradeable.RoleData",
+            "members": [
+              {
+                "label": "hasRole",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IERC1155)1812": {
+            "label": "contract IERC1155",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)1822": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_struct(ContractData)1877_storage)": {
+            "label": "mapping(address => struct EvelonFactory.ContractData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(UserData)1868_storage)": {
+            "label": "mapping(address => struct EvelonFactory.UserData)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(ContractData)1877_storage": {
+            "label": "struct EvelonFactory.ContractData",
+            "members": [
+              {
+                "label": "name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "uri",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "creator",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "tokenId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(UserData)1868_storage": {
+            "label": "struct EvelonFactory.UserData",
+            "members": [
+              {
+                "label": "contractAddresses",
+                "type": "t_array(t_address)dyn_storage",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.AccessControl": [
+            {
+              "contract": "AccessControlUpgradeable",
+              "label": "_roles",
+              "type": "t_mapping(t_bytes32,t_struct(RoleData)25_storage)",
+              "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:61",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "ae96bc17e7518ac381da2d0c3ec90118c6e251d8f63d3bb9a096571b46bd057a": {
+      "address": "0xBfEc52611cF8e522163611297C68bCB28e742c7d",
+      "txHash": "0xda719672d4880b74b55f79591e45f1d11c4e912a1a1cef92a6fa5608c49429c9",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "evelonNFT",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_contract(IERC1155)1812",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:59"
+          },
+          {
+            "label": "usdt",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_contract(IERC20)1822",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:60"
+          },
+          {
+            "label": "buybackWallet",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:61"
+          },
+          {
+            "label": "collectionWallet",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:62"
+          },
+          {
+            "label": "price",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_uint256",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:63"
+          },
+          {
+            "label": "buybackPercent",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_uint256",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:64"
+          },
+          {
+            "label": "implementation",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_address",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:65"
+          },
+          {
+            "label": "userData",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_address,t_struct(UserData)1868_storage)",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:83"
+          },
+          {
+            "label": "contractData",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_mapping(t_address,t_struct(ContractData)1877_storage)",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:84"
+          },
+          {
+            "label": "isUserRegistered",
+            "offset": 0,
+            "slot": "9",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:85"
+          },
+          {
+            "label": "userAddresses",
+            "offset": 0,
+            "slot": "10",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "EvelonFactory",
+            "src": "contracts/EvelonFactory.sol:86"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)25_storage)": {
+            "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(AccessControlStorage)32_storage": {
+            "label": "struct AccessControlUpgradeable.AccessControlStorage",
+            "members": [
+              {
+                "label": "_roles",
+                "type": "t_mapping(t_bytes32,t_struct(RoleData)25_storage)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(InitializableStorage)47_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(RoleData)25_storage": {
+            "label": "struct AccessControlUpgradeable.RoleData",
+            "members": [
+              {
+                "label": "hasRole",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IERC1155)1812": {
+            "label": "contract IERC1155",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)1822": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_struct(ContractData)1877_storage)": {
+            "label": "mapping(address => struct EvelonFactory.ContractData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(UserData)1868_storage)": {
+            "label": "mapping(address => struct EvelonFactory.UserData)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(ContractData)1877_storage": {
+            "label": "struct EvelonFactory.ContractData",
+            "members": [
+              {
+                "label": "name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "uri",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "creator",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "tokenId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(UserData)1868_storage": {
+            "label": "struct EvelonFactory.UserData",
+            "members": [
+              {
+                "label": "contractAddresses",
+                "type": "t_array(t_address)dyn_storage",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
           },
           "t_uint256": {
             "label": "uint256",
