@@ -7,22 +7,43 @@
 const hre = require("hardhat");
 
 async function main() {
-  const currentTimestampInSeconds = Math.round(Date.now() / 1000);
-  const unlockTime = currentTimestampInSeconds + 60;
+  const [owner, otherAccount] = await ethers.getSigners();
 
-  const lockedAmount = hre.ethers.parseEther("0.001");
-
-  const lock = await hre.ethers.deployContract("Lock", [unlockTime], {
-    value: lockedAmount,
-  });
-
-  await lock.waitForDeployment();
-
-  console.log(
-    `Lock with ${ethers.formatEther(
-      lockedAmount
-    )}ETH and unlock timestamp ${unlockTime} deployed to ${lock.target}`
+  const Evelon = await ethers.getContractFactory("EvelonNFTs");
+  const evelon = await upgrades.deployProxy(
+    Evelon,
+    [owner.address, owner.address, owner.address],
+    {
+      initializer: "initialize",
+    },
+    { kind: "uups" }
   );
+
+  // const evelon = await Evelon.attach(
+  //   "0x53572631EA49CBE79B915d788Df0aC688104EeE3"
+  // );
+
+  console.log("Evelon address", evelon.target);
+
+  const Factory = await ethers.getContractFactory("EvelonFactory");
+  const factory = await upgrades.deployProxy(
+    Factory,
+    [
+      owner.address,
+      owner.address,
+      evelon.target,
+      "0xdAC17F958D2ee523a2206206994597C13D831ec7", // USDT
+    ],
+    {
+      initializer: "initialize",
+    },
+    { kind: "uups" }
+  );
+  console.log("Factory address", factory.target);
+  console.log("Granting Role");
+
+  await evelon.grantRole(await evelon.MINTER_ROLE(), factory.target);
+  console.log("Deployment completed");
 }
 
 // We recommend this pattern to be able to use async/await everywhere
