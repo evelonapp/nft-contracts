@@ -18,6 +18,11 @@ async function main() {
     },
     { kind: "uups" }
   );
+
+  // const evelon = await Evelon.attach(
+  //   "0x53572631EA49CBE79B915d788Df0aC688104EeE3"
+  // );
+
   console.log("Evelon address", evelon.target);
 
   const Factory = await ethers.getContractFactory("EvelonFactory");
@@ -27,11 +32,7 @@ async function main() {
       owner.address,
       owner.address,
       evelon.target,
-      "0x69f5b5974536631582d12ed5bc270a6c20448bd9",
-      owner.address,
-      otherAccount.address,
-      1000,
-      10000000,
+      "0xdAC17F958D2ee523a2206206994597C13D831ec7", // USDT
     ],
     {
       initializer: "initialize",
